@@ -11,3 +11,59 @@ body {
    font-family: var(--font-family);
 
 }
+
+html {
+   scrollbar-color: #9D6CFF #e0e0e0;
+   scrollbar-width: thin;
+}
+
+/* Start FAQ Section */
+details {
+   margin-block: .8rem;
+   border: 1px solid #e5e7eb;
+   border-radius: 17px;
+   padding-block: 1rem;
+   padding-inline: 1.5rem;
+   cursor: pointer;
+   transition: all .5s linear;
+}
+
+details summary {
+   font-weight: 600;
+   font-size: clamp(.875rem, 1rem, 1.125rem);
+   color: #4B5563;
+}
+
+details:hover {
+   background-color: hsl(266 100% 95.1% / .5);
+}
+
+details::selection {
+   user-select: none;
+   background-color: transparent;
+}
+
+details::details-content {
+   block-size: 0;
+   transition: all 1s ease;
+}
+
+details[open]::details-content {
+   block-size: auto;
+}
+
+details[open] {
+   background-color: hsl(266 100% 95.1% / .5);
+}
+
+details[open] summary {
+   color: #9D6CFF;
+}
+
+details p {
+   padding-block: 1.5rem 1rem;
+   color: hsl(215 13.79% 34.12% / .9);
+   font-size: clamp(.875rem, 1rem, 1.125rem);
+}
+
+/* End FAQ Section */

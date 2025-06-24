@@ -9,7 +9,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="text-secondary bg-bgFooter rounded-xl shadow-sm mx-4 my-10 py-6">
+    <footer className="text-secondary bg-bgFooter rounded-xl shadow-sm w-[98%] mx-auto my-10 py-6">
       <div className="container px-6">
         <div className=" flex flex-col md:flex-row items-center justify-between gap-6 py-3 text-center text-secondary">
           <a
@@ -44,14 +44,14 @@ function Footer() {
         </div>
         <hr />
 
-        <div className="py-5 flex items-center justify-center md:justify-between gap-8">
+        <div className="py-5  flex flex-col md:flex-row justify-between gap-8 items-center ">
           <img
             src={imgbrand}
             alt="Brand Image"
             title="Brand Image"
             loading="lazy"
           />
-          <p>
+          <p className="text-balance text-center">
             All Rights Reserved © {currentYear}{" "}
             <a
               href="https://www.linkedin.com/in/ahmed-abdel-basset/"
@@ -62,6 +62,7 @@ function Footer() {
               Ahmed A Basset
             </a>
           </p>
+
           <ul className="text-secondary flex items-center  gap-4">
             <li>
               <a

@@ -4,6 +4,7 @@ export default {
   theme: {
     container: {
       center: true,
+      padding: "1.5rem",
       screens: {
         sm: "600px",
         md: "728px",
@@ -17,6 +18,7 @@ export default {
         primary: "#9D6CFF",
         secondary: "#27364C",
         bgFooter: "#f9f5ff",
+        txtGray: "#4B5563",
       },
     },
   },
